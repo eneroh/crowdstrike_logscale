@@ -1,5 +1,39 @@
 === crowdstrike_product_training_-_logscale_fundamentals ===
 
-- Index free log management solution
-- Previously referred to as: humio
-- The Humio brand was purchased and re-branded as LogScale under Crowdstrike's flag
+--- overview ---
+> Index free log management solution
+> Logscale was previously referred to as: humio
+> The Humio brand was purchased and re-branded as LogScale under Crowdstrike's flag
+> Data is pulled in at real-time/near real-time
+> The data is pulled into different OU's (organisational units reference to AD, unsure if actually associated to AD) or repositories (reference to GitHub, probably like data tables in KQL)
+> SOAR capabilities, i.e. automations/responses to certain alerts/incidents
+> Query log management
+> Not solely for security purposes, can also be used for infrastructure/i.t. management. Likely a very hoslitic approach to how it is used within business
+> Ingest over 1 petabyte per day (stored in the cloud?)
+
+--- pull logs from ---
+> Falcon EDR
+> Email/SWG
+> CASB
+> IAM
+> DLP
+> Firewall/NTA/IPS
+
+--- Data forefront ---
+Data normalisation - Ensuring data is readily available and is clearly labelling and consistent throughout (data tables are clear, formatting is consistant and the ability to pull information is not hindered)
+Data lake - Putting data into a centralised location, a central "Data lake"
+Data correlation - one data source can point to another useful data source and that data can correlate to each other to provide a more clear picture of what is occurring in an alert/incident
+
+--- integration ---
+
+
+--- glossary ---
+AD - Active Directory
+SOAR - Security Orchestration Automation and Response
+EDR - Endpoint detection and response
+SWG - Secure web gateway
+CASB - Cloud access security broker
+IAM - Identity and access management
+DLP - Data loss prevention
+NTA - Network traffic analysis
+IPS - Intrusion prevention system
