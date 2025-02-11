@@ -124,7 +124,16 @@ It looks like KQL MS Defender advanced hunting query area or MS Sentinel > Log >
 #type="corelight-json-demodata"
 | worldmap(ip=id.resp.h)
 
+Present world map and respective IP data
+
+--- query formatting? ---
 #type="<table>"
+| <function>(<variable>=<value>)
+
+--- IMPORTANT ---
+HOW DO YOU TIME FILTER WITHIN THE QUERY ITSELF, GUI BASED TIME FILTER IS BAD
+FILTER RESULTS IN PREFERRED METHOD WITH ONLY USEFUL INFORMATION, I DONT CARE ABOUT CERTAIN RESULTS
+"Drill down into the data"
 
 --- glossary ---
 AD - Active Directory
