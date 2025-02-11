@@ -59,12 +59,12 @@
 > Data lake - Putting data into a centralised location, a central "Data lake"
 > Data correlation - one data source can point to another useful data source and that data can correlate to each other to provide a more clear picture of what is occurring in an alert/incident
 
---- Other tool integrations ---
+--- other tool integrations ---
 > SOAR/workflow automations: Phantom, Tines
 Alert triggers in logscale as critieria are met
 > Incident platform: Jira, ServiceNow
 
---- Visualisations ---
+--- visualisations ---
 You dont need to use crowdstrike dashboards, you can use grafana
 
 --- glossary ---
