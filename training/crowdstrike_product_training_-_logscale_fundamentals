@@ -117,6 +117,15 @@ FSR, essentially pipes things over to logscale
 --- data storage length ---
 30 days to 1 year depending on plan
 
+--- WHAT DOES LOGSCALE LOOK LIKE? ---
+It looks like KQL MS Defender advanced hunting query area or MS Sentinel > Log > Query creation
+
+--- query example ---
+#type="corelight-json-demodata"
+| worldmap(ip=id.resp.h)
+
+#type="<table>"
+
 --- glossary ---
 AD - Active Directory
 SOAR - Security Orchestration Automation and Response
