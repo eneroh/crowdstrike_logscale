@@ -60,9 +60,23 @@
 > Data correlation - one data source can point to another useful data source and that data can correlate to each other to provide a more clear picture of what is occurring in an alert/incident
 
 --- data availability ---
-Nothing is written to disk, so no wait times
-Sit in memory for 24-36 hours, depending on build
-Fastest to least fastest
+> Nothing is written to disk, so no wait times
+> Sit in memory for 24-36 hours, depending on build
+> Fastest to least fastest
+> Compressed data, stores for longer for cheaper
+> Live data, no need for archiving
+
+--- bucket storage ---
+> Cloud deployments
+> Less expensive
+> Fast
+> Easier to run
+> Archiving
+> Other businesses use bucket storage as archiving
+> Bucket storage is PRIMARY STORAGE BY CROWDSTRIKE
+> Localdisk is cache
+
+LOGS > STORAGE > CACHE > TIMEFRAME > TAGS > BLOOM FILTER > COMPRESSION > CACHE > STORAGE
 
 --- other tool integrations ---
 > SOAR/workflow automations: Phantom, Tines
@@ -74,6 +88,15 @@ EVERYTHING IS TIMESTAMPED, time plays a key role like with all log systems
 
 --- visualisations ---
 You dont need to use crowdstrike dashboards, you can use grafana
+
+--- cribl ---
+> Data visualization/auditing solution
+> Simplifies data
+> Cribl search function
+> Pull in log, endpoint, iot info etc.
+> Store for compliance but doesnt need to be searchable
+> Configurable in GUI and cancel communication to logscale
+> Take only specific pieces of data to S3 bucket and the rest into LogScale
 
 --- glossary ---
 AD - Active Directory
