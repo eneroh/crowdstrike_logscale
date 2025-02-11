@@ -9,7 +9,7 @@ UNDER CONSTRUCTION
 > Dashboard query, pivot from dashboard to query
 > Time filter via GUI, no query based time filter?
 > Has regex capabilities like with SPL
-> case insensitive = /i
+> case insensitive = /i in regex
 > Results display endpoints or related items
 > Format as several options in top left
 > Data enrichment
