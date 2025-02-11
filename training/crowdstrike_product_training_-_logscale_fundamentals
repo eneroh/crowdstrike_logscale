@@ -130,6 +130,8 @@ Present world map and respective IP data
 #type="<table>"
 | <function>(<variable>=<value>)
 
+Fields manipulation like in splunk/kql, very splunk similar though
+
 --- IMPORTANT ---
 HOW DO YOU TIME FILTER WITHIN THE QUERY ITSELF, GUI BASED TIME FILTER IS BAD
 FILTER RESULTS IN PREFERRED METHOD WITH ONLY USEFUL INFORMATION, I DONT CARE ABOUT CERTAIN RESULTS
