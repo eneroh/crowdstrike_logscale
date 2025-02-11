@@ -13,6 +13,7 @@ UNDER CONSTRUCTION
 > Results display endpoints or related items
 > Format as several options in top left
 > Data enrichment
+> Queries can be used to create dashboard elements/charts/tables
 
 --- Commands ---
 ```cql
