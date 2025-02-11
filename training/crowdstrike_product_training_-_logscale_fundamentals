@@ -141,6 +141,8 @@ FILTER RESULTS IN PREFERRED METHOD WITH ONLY USEFUL INFORMATION, I DONT CARE ABO
 Fast dashboard query change
 No understanding of querying necessary, can be performed via: dashboard gui filters
 
+--- Logscale to Falcon UI detection communication ---
+
 --- glossary ---
 AD - Active Directory
 SOAR - Security Orchestration Automation and Response
