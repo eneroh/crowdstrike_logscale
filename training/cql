@@ -1,12 +1,9 @@
---- cql ---
+=== cql ===
 High speed search
 
---- Commands ---
-```cql
-| select([<column item 1>, <column item 2>, <column item 3>])
+Move to readme.md at later date
 
-Purpose
-> Filter down for useful information
+UNDER CONSTRUCTION
   
 --- Details ---
 > Dashboard query, pivot from dashboard to query
@@ -16,6 +13,21 @@ Purpose
 > Results display endpoints or related items
 > Format as several options in top left
 > Data enrichment
+
+--- Commands ---
+```cql
+| select([<column item 1>, <column item 2>, <column item 3>])
+```
+Purpose
+> Filter down for useful information
+> Equivalent in kql would be project or summarize
+  
+```cql
+*
+```
+Purpose
+> Wildcard
+> Can be used as a wide search, or as associated to a word, table, variable or array even
 
 --- Queries ---
   
@@ -70,3 +82,7 @@ Purpose
 ```
 Purpose
 > Filter results to only useful/relevant information
+
+```cql
+
+```
