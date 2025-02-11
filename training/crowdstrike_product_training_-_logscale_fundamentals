@@ -142,6 +142,34 @@ Fast dashboard query change
 No understanding of querying necessary, can be performed via: dashboard gui filters
 
 --- Logscale to Falcon UI detection communication ---
+Logscale dashboard to falcon ui
+
+--- Data connections ---
+Settings > Data connections > Connections
+
+--- Parser library ---
+Settings > Packages > Marketplace > Use search query for packages
+
+Create your own parser, translate and data normalisation/formatting
+
+--- Parsers ---
+> Akami cllecter
+> Amazon cloudtrail
+> paloalto/firewall + more
+> cisco
+> corelight
+> zscaler
+> extrahop
+> apache
+> nginx
+> apple
+> darktrace/detect
+> redhat/ansible
+
+Provides additional info
+
+--- Logscale community edition???? ---
+Look into homelabbing for further practice
 
 --- glossary ---
 AD - Active Directory
