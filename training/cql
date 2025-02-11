@@ -1,6 +1,13 @@
 --- cql ---
 High speed search
 
+--- Commands ---
+```cql
+| select([<column item 1>, <column item 2>, <column item 3>])
+
+Purpose
+> Filter down for useful information
+  
 --- Details ---
 > Dashboard query, pivot from dashboard to query
 > Time filter via GUI, no query based time filter?
@@ -10,6 +17,8 @@ High speed search
 > Format as several options in top left
 > Data enrichment
 
+--- Queries ---
+  
 ```cql
 /mimikatz/i
 | SeverityName="High"
@@ -56,4 +65,8 @@ Purpose
 Purpose
 > See all data
 
-  
+```cql
+| select ([@timestamp, #vendor.action, host.name, http.request.referrer, Vendor.urlcat, Vendor.urlclass, Vendor.urlsupercat
+```
+Purpose
+> 
