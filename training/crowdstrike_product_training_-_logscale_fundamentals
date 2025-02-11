@@ -12,20 +12,60 @@
 > Ingest over 1 petabyte per day (stored in the cloud?)
 
 --- pull logs from ---
-> Falcon EDR
+> Falcon EDR, machines with agent?
 > Email/SWG
 > CASB
 > IAM
 > DLP
 > Firewall/NTA/IPS
+> Containers
+> Desktops
+> RFID
+> Packaged apps
+> Storage
+> Servers
+> Custom apps
+> Smartphones
+> Databases
+> GPS locations
+> Online services
+> Networks
+> Call detail records
+> Online shopping carts
+> Web services
+> Messaging
 
---- Data forefront ---
-Data normalisation - Ensuring data is readily available and is clearly labelling and consistent throughout (data tables are clear, formatting is consistant and the ability to pull information is not hindered)
-Data lake - Putting data into a centralised location, a central "Data lake"
-Data correlation - one data source can point to another useful data source and that data can correlate to each other to provide a more clear picture of what is occurring in an alert/incident
+--- ingest and digest ---
+> Process
+> Parsing
+> Validate input
+> Timestamp
+> In memory
+> Segment files
+> Live queries
+> Insights
 
---- integration ---
+--- use cases ---
+> Business
+> Application
+> Infrastructure
+> Network
+> Security
+> IOT
+> Public or private cloud
 
+--- data forefront ---
+> Data normalisation - Ensuring data is readily available and is clearly labelling and consistent throughout (data tables are clear, formatting is consistant and the ability to pull information is not hindered)
+> Data lake - Putting data into a centralised location, a central "Data lake"
+> Data correlation - one data source can point to another useful data source and that data can correlate to each other to provide a more clear picture of what is occurring in an alert/incident
+
+--- Other tool integrations ---
+> SOAR/workflow automations: Phantom, Tines
+Alert triggers in logscale as critieria are met
+> Incident platform: Jira, ServiceNow
+
+--- Visualisations ---
+You dont need to use crowdstrike dashboards, you can use grafana
 
 --- glossary ---
 AD - Active Directory
