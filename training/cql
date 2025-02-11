@@ -66,7 +66,7 @@ Purpose
 > See all data
 
 ```cql
-| select ([@timestamp, #vendor.action, host.name, http.request.referrer, Vendor.urlcat, Vendor.urlclass, Vendor.urlsupercat
+| select ([@timestamp, #vendor.action, host.name, http.request.referrer, Vendor.urlcat, Vendor.urlclass, Vendor.urlsupercat, user_agent.original, http.response.status_code, http.request.method, vendor.proto, Vendor.contenttype, Vendor.eurl])
 ```
 Purpose
-> 
+> Filter results to only useful/relevant information
