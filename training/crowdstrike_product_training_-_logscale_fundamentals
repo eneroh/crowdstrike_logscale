@@ -44,7 +44,6 @@ Simplified:
 > Crible edge
 > Observability data lakes
 
-
 --- ingest and digest ---
 > Process
 > Parsing
@@ -107,6 +106,10 @@ You dont need to use crowdstrike dashboards, you can use grafana
 > Store for compliance but doesnt need to be searchable
 > Configurable in GUI and cancel communication to logscale
 > Take only specific pieces of data to S3 bucket and the rest into LogScale
+
+--- data onboarding ---
+> Collect data
+> Process data
 
 --- glossary ---
 AD - Active Directory
