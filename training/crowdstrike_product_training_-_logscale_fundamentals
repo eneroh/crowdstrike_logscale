@@ -111,6 +111,12 @@ You dont need to use crowdstrike dashboards, you can use grafana
 > Collect data
 > Process data
 
+--- falcon search retention ---
+FSR, essentially pipes things over to logscale
+
+--- data storage length ---
+30 days to 1 year depending on plan
+
 --- glossary ---
 AD - Active Directory
 SOAR - Security Orchestration Automation and Response
@@ -121,3 +127,5 @@ IAM - Identity and access management
 DLP - Data loss prevention
 NTA - Network traffic analysis
 IPS - Intrusion prevention system
+FSR - Falcon search retention
+CQL - Crowdstrike query language
