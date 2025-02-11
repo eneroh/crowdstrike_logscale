@@ -64,6 +64,9 @@
 Alert triggers in logscale as critieria are met
 > Incident platform: Jira, ServiceNow
 
+--- IMPORTANT ---
+EVERYTHING IS TIMESTAMPED, time plays a key role like with all log systems
+
 --- visualisations ---
 You dont need to use crowdstrike dashboards, you can use grafana
 
