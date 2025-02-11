@@ -1,18 +1,19 @@
 --- cql ---
 High speed search
 
-Details
+--- Details ---
 > Dashboard query, pivot from dashboard to query
 > Time filter via GUI, no query based time filter?
 > Has regex capabilities like with SPL
 > case insensitive = /i
 > Results display endpoints or related items
 > Format as several options in top left
-  
+> Data enrichment
+
 ```cql
-  /mimikatz/i
-  | SeverityName="High"
-  | groupBy([ComputreName, CommandLine])
+/mimikatz/i
+| SeverityName="High"
+| groupBy([ComputreName, CommandLine])
 ```
   
 Purpose
@@ -20,9 +21,39 @@ Purpose
 
 ```cql
 #event_simpleName!=* OR #streamingApiEvent=Event_DetectionSummaryEvent
-  | EventType=Event_ExternalApiEvent
-  | ExternalApiType=Event_DetectionSummaryEvent
-  | top([Tactic]m as=#events
+| EventType=Event_ExternalApiEvent
+| ExternalApiType=Event_DetectionSummaryEvent
+| top([Tactic]m as=#events
 ```
 Purpose
 > Display events associated to the Mitre ATT&CK Framework Tactics
+
+```cql
+top(DomainName)
+```
+Purpose
+> Search for domains accessed within the lsat 30 days in environment and place count next to domains
+  
+```cql
+ioc:lookup(["DomainName"], type="domain", strict=true)
+| table([DomainName,"ioc[0].labels"])
+| case {
+ioc[0].labels = /Actor/i | regex("^Actor\/(?<iocActor>\w+)", field=ioc[0].labels, strict=false);
+ioc[0].labels != /Actor/i | iocActor := "None Listed" ;
+* }
+| iocActor != "None Listed"
+| groupBy([iocActor,DomainName])
+```
+Purpose
+> Search for potential ioc in environment
+> Filter on malicious domains
+> Focus on just adversary names
+> filter on adversaries associated to domains
+
+```cql
+*
+```
+Purpose
+> See all data
+
+  
