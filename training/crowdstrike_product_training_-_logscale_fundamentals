@@ -59,6 +59,11 @@
 > Data lake - Putting data into a centralised location, a central "Data lake"
 > Data correlation - one data source can point to another useful data source and that data can correlate to each other to provide a more clear picture of what is occurring in an alert/incident
 
+--- data availability ---
+Nothing is written to disk, so no wait times
+Sit in memory for 24-36 hours, depending on build
+Fastest to least fastest
+
 --- other tool integrations ---
 > SOAR/workflow automations: Phantom, Tines
 Alert triggers in logscale as critieria are met
