@@ -1,0 +1,28 @@
+--- cql ---
+High speed search
+
+Details
+> Dashboard query, pivot from dashboard to query
+> Time filter via GUI, no query based time filter?
+> Has regex capabilities like with SPL
+> case insensitive = /i
+> Results display endpoints or related items
+> Format as several options in top left
+  
+```cql
+  /mimikatz/i
+  | SeverityName="High"
+  | groupBy([ComputreName, CommandLine])
+```
+  
+Purpose
+> Search for credential stealing tool
+
+```cql
+#event_simpleName!=* OR #streamingApiEvent=Event_DetectionSummaryEvent
+  | EventType=Event_ExternalApiEvent
+  | ExternalApiType=Event_DetectionSummaryEvent
+  | top([Tactic]m as=#events
+```
+Purpose
+> Display events associated to the Mitre ATT&CK Framework Tactics
